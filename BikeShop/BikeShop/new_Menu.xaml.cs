@@ -30,5 +30,11 @@ namespace BikeShop
             NavigationService ns = NavigationService.GetNavigationService(contact);
             ns.Navigate(new Uri("/Contact.xaml", UriKind.Relative));
         }
+
+        private void live_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(live);
+            ns.Navigate(new Uri("/Discussion.xaml", UriKind.Relative));
+        }
     }
 }
